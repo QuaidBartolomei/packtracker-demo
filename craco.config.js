@@ -1,14 +1,18 @@
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const StatsWriterPlugin =
+  require('webpack-stats-plugin').StatsWriterPlugin
 
 module.exports = {
   webpack: {
-    plugins: [new BundleAnalyzerPlugin({ analyzerMode: 'json' })],
-    stats: {
-      assets: true,
-      entrypoints: true,
-      chunks: true,
-      modules: true,
-    },
+    plugins: [
+      new StatsWriterPlugin({
+        filename: 'stats.json', // Default
+        stats: {
+          assets: true,
+          entrypoints: true,
+          chunks: true,
+          modules: true,
+        },
+      }),
+    ],
   },
 };

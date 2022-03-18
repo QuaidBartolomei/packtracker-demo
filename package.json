@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.9.0",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.5.1",
@@ -10,11 +11,10 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "react": "^16.13.0",
-    "@craco/craco": "^5.9.0",
-    "webpack-bundle-analyzer": "^4.5.0",
     "react-dom": "^16.13.0",
     "react-scripts": "^3.4.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "source-map-explorer": "^2.5.2"
+    "source-map-explorer": "^2.5.2",
+    "webpack-stats-plugin": "^1.0.3"
   }
 }
