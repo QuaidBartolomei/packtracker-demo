@@ -1,7 +1,7 @@
-import { Button } from '@mui/material';
-import React from 'react';
+import {Box, Button} from '@mui/material'
 import logo from './logo.svg';
 import './App.css';
+import _ from 'lodash';
 
 function App() {
   return (
@@ -20,6 +20,9 @@ function App() {
           Learn React
         </a>
         <Button>Test</Button>
+        <Box>
+          {_.camelCase('hello world')}
+        </Box>
       </header>
     </div>
   );
